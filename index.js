@@ -32,7 +32,6 @@ client.on('ready', () => {
             client.sendMessage(detail._serialized, comunicazione[1]).then(msg => {
                 comunicazione.push(msg._data.id.id);
             }).catch(error => {
-                console.log(error);
                 esito( comunicazione[0], comunicazione[1], 'Non inviato (Send error)' );
                 comunicazione.push(null, null);
                 tryTerminate();
