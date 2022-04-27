@@ -1,5 +1,4 @@
 const comunicazioni = eval(process.argv[2]);
-
 const qrcode = require('qrcode-terminal');
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
