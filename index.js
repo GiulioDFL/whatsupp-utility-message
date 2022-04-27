@@ -1,5 +1,5 @@
-const args = require('minimist')(process.argv.slice(2));
-const comunicazioni = eval(args.dati);
+const comunicazioni = eval(process.argv[2]);
+
 const qrcode = require('qrcode-terminal');
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
